@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     //퓨처 함수로 로딩구현
     return FutureBuilder(
-        future: Future.delayed(Duration(seconds: 3), () => 100),
+        future: Future.delayed(Duration(seconds:3 ), () => 100),
         builder: (context, snapshot) {
           return AnimatedSwitcher(
             duration: Duration(milliseconds: 900), //페이드인아웃 효과
